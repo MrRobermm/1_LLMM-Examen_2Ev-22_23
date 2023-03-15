@@ -1,5 +1,75 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#Container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #c3c3c3;
+        padding: 20px;
+        min-height: 350px;
+        
+    }
+@media (min-width:700px){
+    .Father{
+        display: flex;
+        min-height: 50px;
+        min-width: 30%;
+        flex-direction: column;
+        gap: 180px;
+    }
+
+    .Child{
+        min-height: 50px;
+        min-width: 30%;
+        background-color: #606060;
+
+    }
+
+    .Child1{
+        min-height: 100px;
+        min-width: 30%;
+        background-color: #606060;
+        justify-content: space-around;
+    }
+
+    .Child:nth-of-type(2){
+        align-self: stretch;
+        background-color: #606060;
+    }
+
+}
+
+@media (max-width:700px){
+    #Container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        gap: 15px;
+        background-color: #c3c3c3;
+        padding: 20px;
+        min-height: 350px;
+    }
+
+    .Father{
+        display: flex;
+        min-height: 50px;
+        min-width: 30%;
+        flex-direction: column;
+        gap: 180px;
+    }
+
+    .Child{
+        min-height: 50px;
+        min-width: 30%;
+    }
+
+    .Child1{
+        min-height: 100px;
+        min-width: 30%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Child:nth-of-type(2){
+        align-self: stretch;
+    }
 }
